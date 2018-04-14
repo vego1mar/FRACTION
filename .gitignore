@@ -3,3 +3,4 @@ runtime/
 sonar-project.properties
 .sonar/
 out/
+.scannerwork/

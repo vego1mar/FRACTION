@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/opensource/fraction/containers/Fraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/opensource/fraction/operators/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/opensource/fraction/operators/comparison/Comparer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/opensource/fraction/utils/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/opensource/fraction/containers/FractionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/opensource/fraction/operators/OperatorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/opensource/fraction/utils/StringsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRACTION.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FRACTION.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-run-analysis.bat" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-run-analysis.bat" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,12 +70,23 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,6 +104,16 @@
         <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/window/MainWindow.java" />
         <option value="$PROJECT_DIR$/sonar-project-clear.properties" />
         <option value="$PROJECT_DIR$/sonar-run-analysis.bat" />
+        <option value="$PROJECT_DIR$/src/test/java/opensource/fraction/utils/StringsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/opensource/fraction/containers/FractionContainerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/containers/FractionContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/containers/Fraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/operators/comparators/Comparable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/utils/Strings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/operators/comparison/Operators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/operators/Operators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/opensource/fraction/operators/OperatorsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/opensource/fraction/operators/comparison/Comparer.java" />
       </list>
     </option>
   </component>
@@ -110,11 +143,12 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="1815" />
     <option name="height" value="1057" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -123,7 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,22 +194,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="window" type="462c0819:PsiDirectoryNode" />
+              <item name="fraction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
               <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fraction" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
               <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="MainWindow" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fraction" type="462c0819:PsiDirectoryNode" />
+              <item name="operators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
@@ -183,12 +220,36 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fraction" type="462c0819:PsiDirectoryNode" />
+              <item name="operators" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,11 +263,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/opensource/fraction/operators" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="opensource.fraction.operators" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainWindow">
+  <component name="RunManager" selected="JUnit.OperatorsTest.areEqual">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -237,19 +304,123 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
-    <configuration name="MainWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="opensource.fraction.window.MainWindow" />
-      <module name="FRACTION" />
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="FractionTest.setDenominator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="opensource.fraction.window.*" />
+          <option name="PATTERN" value="opensource.fraction.containers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="opensource.fraction.containers" />
+      <option name="MAIN_CLASS_NAME" value="opensource.fraction.containers.FractionTest" />
+      <option name="METHOD_NAME" value="setDenominator" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FractionTest.setNumerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opensource.fraction.containers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="opensource.fraction.containers" />
+      <option name="MAIN_CLASS_NAME" value="opensource.fraction.containers.FractionTest" />
+      <option name="METHOD_NAME" value="setNumerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="OperatorsTest.areEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opensource.fraction.operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="opensource.fraction.operators" />
+      <option name="MAIN_CLASS_NAME" value="opensource.fraction.operators.OperatorsTest" />
+      <option name="METHOD_NAME" value="areEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="StringsTest.isSimpleNumeric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opensource.fraction.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="opensource.fraction.utils" />
+      <option name="MAIN_CLASS_NAME" value="opensource.fraction.utils.StringsTest" />
+      <option name="METHOD_NAME" value="isSimpleNumeric" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="StringsTest.isZeroed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opensource.fraction.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="opensource.fraction.utils" />
+      <option name="MAIN_CLASS_NAME" value="opensource.fraction.utils.StringsTest" />
+      <option name="METHOD_NAME" value="isZeroed" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -317,11 +488,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.MainWindow" />
+      <item itemvalue="JUnit.StringsTest.isSimpleNumeric" />
+      <item itemvalue="JUnit.FractionTest.setNumerator" />
+      <item itemvalue="JUnit.FractionTest.setDenominator" />
+      <item itemvalue="JUnit.StringsTest.isZeroed" />
+      <item itemvalue="JUnit.OperatorsTest.areEqual" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainWindow" />
+        <item itemvalue="JUnit.OperatorsTest.areEqual" />
+        <item itemvalue="JUnit.FractionTest.setDenominator" />
+        <item itemvalue="JUnit.StringsTest.isZeroed" />
+        <item itemvalue="JUnit.FractionTest.setNumerator" />
+        <item itemvalue="JUnit.StringsTest.isSimpleNumeric" />
       </list>
     </recent_temporary>
   </component>
@@ -338,11 +517,45 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1523697002473" duration="808000" />
       <workItem from="1523697840402" duration="2853000" />
+      <workItem from="1523701080393" duration="8539000" />
+      <workItem from="1523709665902" duration="885000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="FractionContainerTest_setNumerator - 2018.04.14 at 13h 00m 56s.xml">
+      <configuration name="FractionContainerTest.setNumerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FractionContainerTest_setNumerator - 2018.04.14 at 13h 02m 25s.xml">
+      <configuration name="FractionContainerTest.setNumerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FractionContainerTest_setNumerator - 2018.04.14 at 13h 07m 03s.xml">
+      <configuration name="FractionContainerTest.setNumerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FractionContainerTest_setNumerator - 2018.04.14 at 13h 09m 49s.xml">
+      <configuration name="FractionContainerTest.setNumerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FractionContainerTest_setDenominator - 2018.04.14 at 13h 12m 29s.xml">
+      <configuration name="FractionContainerTest.setDenominator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FractionContainerTest_setDenominator - 2018.04.14 at 13h 12m 45s.xml">
+      <configuration name="FractionContainerTest.setDenominator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringsTest_isZeroed - 2018.04.14 at 13h 20m 24s.xml">
+      <configuration name="StringsTest.isZeroed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FractionContainerTest_setDenominator - 2018.04.14 at 13h 23m 25s.xml">
+      <configuration name="FractionContainerTest.setDenominator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OperatorsTest_areEqual - 2018.04.14 at 14h 24m 52s.xml">
+      <configuration name="OperatorsTest.areEqual" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OperatorsTest_areEqual - 2018.04.14 at 14h 26m 38s.xml">
+      <configuration name="OperatorsTest.areEqual" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4963000" />
+    <option name="totallyTimeSpent" value="14387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1815" height="1057" extended-state="0" />
@@ -356,19 +569,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32972974" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32991454" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32864866" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22564103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.12324324" visible="true" weight="0.23076923" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.8767567" side_tool="true" weight="0.22792023" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -442,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainWindow/MainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -464,9 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/log4j-application.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/opensource/fraction/window/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -477,10 +679,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-project-clear.properties">
+    <entry file="file://$PROJECT_DIR$/sonar-project-clear.properties" />
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/opensource/fraction/utils/StringsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isSimpleNumeric#0;class#StringsTest#0" />
+            <element signature="method#isZeroed#0;class#StringsTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/opensource/fraction/operators/comparators/Comparable.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/opensource/fraction/containers/FractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setNumerator#0;class#FractionContainerTest#0" />
+            <element signature="method#setDenominator#0;class#FractionContainerTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/opensource/fraction/operators/OperatorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#areEqual#0;class#OperatorsTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/opensource/fraction/utils/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="method#Strings#0;class#Strings#0" />
+            <element signature="method#isSimpleNumeric#0;class#Strings#0" />
+            <element signature="method#isZeroed#0;class#Strings#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/opensource/fraction/operators/comparison/Comparer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Comparer#0;class#Comparer#0" />
+            <element signature="method#equality#0;class#Comparer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/opensource/fraction/operators/Operators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/opensource/fraction/containers/Fraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Fraction#0;class#Fraction#0" />
+            <element signature="method#setNumerator#0;class#Fraction#0" />
+            <element signature="method#setDenominator#0;class#Fraction#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,19 +779,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="206">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/log4j-application.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
