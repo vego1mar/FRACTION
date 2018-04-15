@@ -1,7 +1,7 @@
-package opensource.fraction.operators;
+package pl.fraction.operators;
 
-import opensource.fraction.containers.Fraction;
-import opensource.fraction.operators.comparison.Comparer;
+import pl.fraction.containers.Fraction;
+import pl.fraction.operators.comparison.Comparer;
 
 public class Operators {
 

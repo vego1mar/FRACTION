@@ -1,4 +1,4 @@
-package opensource.fraction.window;
+package pl.fraction.window;
 
 public class MainWindowController {
 }

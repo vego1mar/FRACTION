@@ -1,6 +1,6 @@
-package opensource.fraction.operators;
+package pl.fraction.operators;
 
-import opensource.fraction.containers.Fraction;
+import pl.fraction.containers.Fraction;
 import org.junit.Assert;
 import org.junit.Test;
 

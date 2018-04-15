@@ -1,6 +1,6 @@
-package opensource.fraction.containers;
+package pl.fraction.containers;
 
-import opensource.fraction.utils.Strings;
+import pl.fraction.utils.Strings;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 

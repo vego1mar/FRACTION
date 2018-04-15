@@ -1,4 +1,4 @@
-package opensource.fraction.window;
+package pl.fraction.window;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

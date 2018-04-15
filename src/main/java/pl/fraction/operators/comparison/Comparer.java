@@ -1,6 +1,6 @@
-package opensource.fraction.operators.comparison;
+package pl.fraction.operators.comparison;
 
-import opensource.fraction.containers.Fraction;
+import pl.fraction.containers.Fraction;
 import org.jetbrains.annotations.NotNull;
 
 public class Comparer {

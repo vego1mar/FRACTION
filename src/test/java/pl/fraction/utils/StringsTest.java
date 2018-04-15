@@ -1,4 +1,4 @@
-package opensource.fraction.utils;
+package pl.fraction.utils;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -75,6 +75,19 @@ public class StringsTest {
         Assert.assertFalse(result9);
         Assert.assertFalse(result10);
         Assert.assertFalse(result11);
+    }
+
+    @Test
+    public void get() {
+        // given
+        final int LENGTH = 11;
+        final char INITIALIZER = '0';
+
+        // when
+        char[] result1 = Strings.get(LENGTH, INITIALIZER);
+
+        // then
+        Assert.assertEquals("00000000000", new String(result1));
     }
 
 }

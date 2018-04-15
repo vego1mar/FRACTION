@@ -1,5 +1,6 @@
-package opensource.fraction.utils;
+package pl.fraction.utils;
 
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 public class Strings {
@@ -26,6 +27,17 @@ public class Strings {
         }
 
         return true;
+    }
+
+    @Contract(pure = true)
+    public static char[] get(int length, char initializer) {
+        char[] variable = new char[length];
+
+        for (int i = 0; i < variable.length; i++) {
+            variable[i] = initializer;
+        }
+
+        return variable;
     }
 
 }

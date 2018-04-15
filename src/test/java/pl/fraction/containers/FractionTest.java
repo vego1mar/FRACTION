@@ -1,4 +1,4 @@
-package opensource.fraction.containers;
+package pl.fraction.containers;
 
 import org.junit.Assert;
 import org.junit.Test;
