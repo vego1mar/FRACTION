@@ -8,7 +8,7 @@ public class RulesTest {
     @Test
     public void getRule() {
         // given
-        Rules rules = new Rules(RulesType.ADDITION);
+        Rules rules = new Rules(OperationType.ADDITION);
 
         // when
         char result1 = rules.getRule('9', '9', '0');

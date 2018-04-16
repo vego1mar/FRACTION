@@ -4,12 +4,12 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AdditionTest {
+public class BasicOperationTest {
 
     @Test
-    public void process1() {
+    public void processAddition1() {
         // given
-        Addition adder = new Addition();
+        BasicOperation adder = new BasicOperation(OperationType.ADDITION);
 
         // when
         String result1 = adder.process("98", "9");
@@ -29,9 +29,9 @@ public class AdditionTest {
     }
 
     @Test
-    public void process2() {
+    public void processAddition2() {
         // given
-        Addition adder = new Addition();
+        BasicOperation adder = new BasicOperation(OperationType.ADDITION);
         final int MINIMUM = 0;
         final int MAXIMUM = Integer.MAX_VALUE - 2;
 
@@ -44,6 +44,28 @@ public class AdditionTest {
 
         // then
         Assert.assertEquals(String.valueOf(value1 + value2), result1);
+    }
+
+    @Test
+    public void processSubtraction1() {
+        // given
+        BasicOperation subtracter = new BasicOperation(OperationType.SUBTRACTION);
+
+        // when
+        String result1 = subtracter.process("957", "63");
+        String result2 = subtracter.process("235", "6");
+        String result3 = subtracter.process("900", "99");
+        String result4 = subtracter.process("999", "99");
+        String result5 = subtracter.process("900", "89");
+        String result6 = subtracter.process("987654321012", "550123456789");
+
+        // then
+        Assert.assertEquals("894", result1);
+        Assert.assertEquals("229", result2);
+        Assert.assertEquals("801", result3);
+        Assert.assertEquals("900", result4);
+        Assert.assertEquals("811", result5);
+        Assert.assertEquals("437530864223", result6);
     }
 
 }

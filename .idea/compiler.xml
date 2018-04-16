@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="FRACTION" target="1.10" />
+      <module name="FRACTION" target="1.9" />
     </bytecodeTargetLevel>
   </component>
 </project>

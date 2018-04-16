@@ -4,25 +4,18 @@ import org.jetbrains.annotations.NotNull;
 import pl.fraction.containers.Operands;
 import pl.fraction.utils.Strings;
 
-public class Addition implements Processable {
+public class BasicOperation {
 
     private Rules rules;
+    private OperationType operation;
 
-    public Addition() {
-        rules = new Rules(RulesType.ADDITION);
-    }
-
-    @Override
-    public String process(String operand1, String operand2) {
-        if (Strings.isSimpleNumeric(operand1) && Strings.isSimpleNumeric(operand2)) {
-            return add(operand1, operand2);
-        }
-
-        return "";
+    public BasicOperation(OperationType operation) {
+        rules = new Rules(operation);
+        this.operation = operation;
     }
 
     @NotNull
-    private String add(@NotNull String operand1, @NotNull String operand2) {
+    private String processAdditionOrSubtraction(@NotNull String operand1, @NotNull String operand2) {
         Operands operands = new Operands(operand1, operand2);
         char[] result = Strings.get(operands.getOperand1().length + 1, '0');
         char offset;
@@ -57,4 +50,24 @@ public class Addition implements Processable {
 
         return new String(result);
     }
+
+    public String process(String operand1, String operand2) {
+        if (Strings.isSimpleNumeric(operand1) && Strings.isSimpleNumeric(operand2)) {
+            return switchOperationType(operand1, operand2);
+        }
+
+        return "";
+    }
+
+    @NotNull
+    private String switchOperationType(String operand1, String operand2) {
+        switch (operation) {
+            case ADDITION:
+            case SUBTRACTION:
+                return processAdditionOrSubtraction(operand1, operand2);
+        }
+
+        return "";
+    }
+
 }
