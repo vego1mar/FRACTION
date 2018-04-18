@@ -1,5 +1,7 @@
 package pl.fraction.utils;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,7 +32,7 @@ public class Strings {
     }
 
     @Contract(pure = true)
-    public static char[] get(int length, char initializer) {
+    public static char[] getArray(int length, char initializer) {
         char[] variable = new char[length];
 
         for (int i = 0; i < variable.length; i++) {
@@ -38,6 +40,40 @@ public class Strings {
         }
 
         return variable;
+    }
+
+    @NotNull
+    public static String getString(int length, char initializer) {
+        return new String(getArray(length, initializer));
+    }
+
+    public static int getIndexOfLastLeadingZero(@NotNull String string) {
+        for (int i = 0; i < string.length() - 1; i++) {
+            if (!Character.isDigit(string.toCharArray()[i]) || string.toCharArray()[i] != '0') {
+                break;
+            }
+
+            if (string.toCharArray()[i] == '0' && string.toCharArray()[i + 1] != '0') {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    @NotNull
+    public static String getWithoutLeadingZeroes(@NotNull String string) {
+        return string.substring(getIndexOfLastLeadingZero(string) + 1);
+    }
+
+    public static List<String> getShortenedNumbers(@NotNull List<StringBuilder> digitsOnlyList) {
+        List<String> shortenedList = new ArrayList<>();
+
+        for (StringBuilder builder : digitsOnlyList) {
+            shortenedList.add(getWithoutLeadingZeroes(builder.toString()));
+        }
+
+        return shortenedList;
     }
 
 }

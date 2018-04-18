@@ -68,4 +68,30 @@ public class BasicOperationTest {
         Assert.assertEquals("437530864223", result6);
     }
 
+    @Test
+    public void processMultiplication1() {
+        // given
+        BasicOperation multiplicator = new BasicOperation(OperationType.MULTIPLICATION);
+        long value1 = ThreadLocalRandom.current().nextInt(0, Integer.MAX_VALUE - 2);
+        long value2 = ThreadLocalRandom.current().nextInt(0, Integer.MAX_VALUE - 2);
+
+        // when
+        String result1 = multiplicator.process("35", "162");
+        String result2 = multiplicator.process("231", "54");
+        String result3 = multiplicator.process("231", "95");
+        String result4 = multiplicator.process("99", "99");
+        String result5 = multiplicator.process("987654321", "987654321");
+        String result6 = multiplicator.process("123456789", "9876543210");
+        String result7 = multiplicator.process(String.valueOf(value1), String.valueOf(value2));
+
+        // then
+        Assert.assertEquals("5670", result1);
+        Assert.assertEquals("12474", result2);
+        Assert.assertEquals("21945", result3);
+        Assert.assertEquals("9801", result4);
+        Assert.assertEquals("975461057789971041", result5);
+        Assert.assertEquals("1219326311126352690", result6);
+        Assert.assertEquals(String.valueOf(value1 * value2), result7);
+    }
+
 }

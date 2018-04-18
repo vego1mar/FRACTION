@@ -14,5 +14,9 @@ public class Operators {
     }
 
     // TODO: addition(Fraction, Fraction) using LCM (Least Common Multiple)
+    // TODO: subtraction(Fraction, Fraction) using LCM
+    // TODO: multiplication(Fraction, Fraction)
+    // TODO: division(Fraction, Fraction) using multiplication inversion
+    // TODO: shortening(Fraction) using GCD (Greatest Common Divisor)
 
 }
