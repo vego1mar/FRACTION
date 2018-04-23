@@ -63,6 +63,10 @@ public class Strings {
 
     @NotNull
     public static String getWithoutLeadingZeroes(@NotNull String string) {
+        if (isZeroed(string)) {
+            return "";
+        }
+
         return string.substring(getIndexOfLastLeadingZero(string) + 1);
     }
 

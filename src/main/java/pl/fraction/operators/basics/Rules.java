@@ -230,7 +230,7 @@ public class Rules {
     private void populateBySubtractionRules() {
         table[0][0][0] = '0';
         table[0][0][1] = '0';
-        table[0][1][0] = '0';
+        table[0][1][0] = '9';
         table[0][1][1] = '1';
         table[0][2][0] = '8';
         table[0][2][1] = '1';

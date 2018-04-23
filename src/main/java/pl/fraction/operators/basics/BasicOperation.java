@@ -114,8 +114,9 @@ public class BasicOperation {
     private String switchOperationType(String operand1, String operand2) {
         switch (operation) {
             case ADDITION:
-            case SUBTRACTION:
                 return processAdditionOrSubtraction(operand1, operand2);
+            case SUBTRACTION:
+                return Strings.getWithoutLeadingZeroes(processAdditionOrSubtraction(operand1, operand2));
             case MULTIPLICATION:
                 return processLongMultiplication(operand1, operand2);
         }
