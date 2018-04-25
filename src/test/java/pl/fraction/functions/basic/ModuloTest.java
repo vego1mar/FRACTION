@@ -17,6 +17,8 @@ public class ModuloTest {
         String result6 = Modulo.get("1010101000101", "101010111010");
         String result7 = Modulo.get("666", "999");
         String result8 = Modulo.get("55566556587", "111");
+        String result9 = Modulo.get("6", "2");
+        String result10 = Modulo.get("25", "5");
 
         // then
         Assert.assertEquals("1", result1);
@@ -27,6 +29,8 @@ public class ModuloTest {
         Assert.assertEquals("101010001011", result6);
         Assert.assertEquals("666", result7);
         Assert.assertEquals("99", result8);
+        Assert.assertEquals("0", result9);
+        Assert.assertEquals("0", result10);
     }
 
 }

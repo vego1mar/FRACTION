@@ -60,6 +60,7 @@ public class BasicOperationTest {
         String result6 = subtracter.process("987654321012", "550123456789");
         String result7 = subtracter.process("10580", "1058");
         String result8 = subtracter.process("10005", "23");
+        String result9 = subtracter.process("6", "6");
 
         // then
         Assert.assertEquals("894", result1);
@@ -70,6 +71,7 @@ public class BasicOperationTest {
         Assert.assertEquals("437530864223", result6);
         Assert.assertEquals("9522", result7);
         Assert.assertEquals("9982", result8);
+        Assert.assertEquals("0", result9);
     }
 
     @Test

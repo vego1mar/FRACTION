@@ -116,12 +116,26 @@ public class BasicOperation {
             case ADDITION:
                 return processAdditionOrSubtraction(operand1, operand2);
             case SUBTRACTION:
-                return Strings.getWithoutLeadingZeroes(processAdditionOrSubtraction(operand1, operand2));
+                return processSubtraction(operand1, operand2);
             case MULTIPLICATION:
                 return processLongMultiplication(operand1, operand2);
         }
 
         return "";
+    }
+
+    private String processSubtraction(@NotNull String operand1, String operand2) {
+        if (operand1.equals(operand2)) {
+            return "0";
+        }
+
+        String result = Strings.getWithoutLeadingZeroes(processAdditionOrSubtraction(operand1, operand2));
+
+        if (result.equals("")) {
+            return "0";
+        }
+
+        return result;
     }
 
 }

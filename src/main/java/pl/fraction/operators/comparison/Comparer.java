@@ -20,6 +20,10 @@ public class Comparer {
         return fraction1.getNumerator().equals(fraction2.getNumerator()) && fraction1.getDenominator().equals(fraction2.getDenominator());
     }
 
+    public static boolean areEqual(String number1, String number2) {
+        return Strings.getWithoutLeadingZeroes(number1).equals(Strings.getWithoutLeadingZeroes(number2));
+    }
+
     public static boolean isGreaterThan(@NotNull String number, String comparedNumber) {
         if (number.equals(comparedNumber) || (Strings.isZeroed(number) && Strings.isZeroed(comparedNumber))) {
             return false;
@@ -43,6 +47,14 @@ public class Comparer {
         }
 
         return false;
+    }
+
+    public static boolean isLowerThan(String number, String comparedNumber) {
+        if (areEqual(number, comparedNumber)) {
+            return false;
+        }
+
+        return !isGreaterThan(number, comparedNumber);
     }
 
 }
