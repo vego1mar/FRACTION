@@ -1,11 +1,14 @@
 package pl.fraction.functions.basic;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import pl.fraction.operators.basics.BasicOperation;
 import pl.fraction.operators.basics.OperationType;
 import pl.fraction.operators.comparison.Comparer;
+import pl.fraction.utils.Strings;
 
 public final class Seeker {
 
@@ -19,24 +22,6 @@ public final class Seeker {
         subtractor = new BasicOperation(OperationType.SUBTRACTION);
         multiplicator = new BasicOperation(OperationType.MULTIPLICATION);
         remainder = "0";
-    }
-
-    public static String getGCD(@NotNull String number1, String number2) {
-        if (number1.equals(number2)) {
-            return "1";
-        }
-
-        String a = number1;
-        String b = number2;
-        String c;
-
-        while (Comparer.isGreaterThan(b, "0")) {
-            c = Modulo.get(a, b);
-            a = b;
-            b = c;
-        }
-
-        return a;
     }
 
     @Contract(pure = true) public String getRemainder() {
@@ -54,14 +39,14 @@ public final class Seeker {
             return "1";
         }
 
-        List<String> multipler = getRaisingMultiple(dividend, divider);
-        multipler = getFallingMultiple(multipler, dividend);
+        List<String> multipler = getStepperRaisingMultiple(dividend, divider);
+        multipler = getStepperFallingMultiple(multipler, dividend);
         multipler = getUltimateMultiple(multipler, dividend, divider);
         remainder = multipler.get(1);
         return multipler.get(0);
     }
 
-    @NotNull private List<String> getRaisingMultiple(String dividend, String divider) {
+    @NotNull private List<String> getStepperRaisingMultiple(String dividend, String divider) {
         String multiplier = "1";
         String multiple = divider;
         String nextMultiple;
@@ -82,7 +67,7 @@ public final class Seeker {
         return List.of(multiple, result, subtractor.process(multiplier, "1"));
     }
 
-    @NotNull private List<String> getFallingMultiple(@NotNull List<String> multipler, String dividend) {
+    @NotNull private List<String> getStepperFallingMultiple(@NotNull List<String> multipler, String dividend) {
         String multiplier = multipler.get(2);
         String currentMultiple = multipler.get(0);
         String nextMultiple;
@@ -104,6 +89,26 @@ public final class Seeker {
     }
 
     @NotNull private List<String> getUltimateMultiple(@NotNull List<String> multipler, String dividend, String divider) {
+        Deque<String> addends = new LinkedList<>();
+        List<String> outcome = getUpswingOfRaisingMultiple(multipler, addends, dividend, divider);
+        outcome = getUpswingOfFallingMultiple(addends, outcome, dividend);
+        String multiple = outcome.get(1);
+        String result = outcome.get(0);
+
+        while (Comparer.isLowerThan(multiple, dividend)) {
+            multiple = adder.process(multiple, divider);
+            result = adder.process(result, "1");
+        }
+
+        if (Comparer.areEqual(subtractor.process(multiple, dividend), "0")) {
+            return List.of(result, "0");
+        }
+
+        multiple = subtractor.process(multiple, divider);
+        return List.of(subtractor.process(result, "1"), subtractor.process(dividend, multiple));
+    }
+
+    @NotNull private List<String> getUpswingOfRaisingMultiple(@NotNull List<String> multipler, @NotNull Deque<String> addends, String dividend, String divider) {
         String multiple = multipler.get(0);
         String result = multipler.get(1);
         String previousAdjunct = "1";
@@ -112,6 +117,7 @@ public final class Seeker {
 
         while (true) {
             nextAdjunct = multiplicator.process(nextAdjunct, divider);
+            addends.push(nextAdjunct);
             multiple = adder.process(multiple, nextAdjunct);
             result = adder.process(result, previousAdjunct);
             condition = Comparer.isLowerThan(multiple, dividend);
@@ -125,20 +131,76 @@ public final class Seeker {
 
         result = subtractor.process(result, previousAdjunct);
         multiple = subtractor.process(multiple, nextAdjunct);
+        return List.of(result, multiple);
+    }
 
-        // TODO: stack optimization here (push earlier, pop later)
+    @NotNull private List<String> getUpswingOfFallingMultiple(@NotNull Deque<String> addends, @NotNull List<String> outcome, String dividend) {
+        String multiple = outcome.get(1);
+        String result = outcome.get(0);
+        String previousAdjunct = addends.pop();
 
-        while (Comparer.isLowerThan(multiple, dividend)) {
-            multiple = adder.process(multiple, divider);
-            result = adder.process(result, "1");
+        if (!addends.isEmpty()) {
+            previousAdjunct = addends.pop();
         }
 
-        if (Comparer.areEqual(subtractor.process(multiple, dividend), "0")) {
-            return List.of(result, "0");
+        String nextMultiple;
+        String popCopy;
+
+        while (!addends.isEmpty()) {
+            nextMultiple = adder.process(multiple, previousAdjunct);
+
+            if (Comparer.isGreaterThan(nextMultiple, dividend)) {
+                previousAdjunct = addends.pop();
+                continue;
+            }
+
+            multiple = nextMultiple;
+            popCopy = addends.pop();
+            result = adder.process(result, popCopy);
+            addends.push(popCopy);
         }
 
-        multiple = subtractor.process(multiple, divider);
-        return List.of(subtractor.process(result, "1"), subtractor.process(dividend, multiple));
+        return List.of(result, multiple);
+    }
+
+    public String getModulo(String dividend, String aliquot) {
+        if (Strings.isZeroed(aliquot) || dividend.isEmpty() || aliquot.isEmpty()) {
+            return "";
+        }
+
+        if (dividend.equals(aliquot) || (Strings.isZeroed(dividend) && Strings.isZeroed(aliquot))) {
+            return "0";
+        }
+
+        if (!Comparer.isGreaterThan(dividend, aliquot)) {
+            return dividend;
+        }
+
+        getFloorDivisor(dividend, aliquot);
+        return getRemainder();
+    }
+
+    public String getGCD(@NotNull String number1, String number2) {
+        if (Comparer.areEqual(number1, number2)) {
+            return "1";
+        }
+
+        String a = number1;
+        String b = number2;
+        String c;
+
+        while (Comparer.isGreaterThan(b, "0")) {
+            getFloorDivisor(a, b);
+            c = getRemainder();
+            a = b;
+            b = c;
+        }
+
+        return a;
+    }
+
+    @NotNull public String getLCM(String number1, String number2) {
+        return getFloorDivisor(multiplicator.process(number1, number2), getGCD(number1, number2));
     }
 
 }

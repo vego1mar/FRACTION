@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Seeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/BasicOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/BasicOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/operators/comparison/Comparer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/operators/comparison/Comparer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/ModuloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/ModuloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/fraction/operators/basics/BasicOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/fraction/operators/basics/BasicOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Modulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Seeker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Seeker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/ModuloTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,37 +78,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Seeker.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Seeker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="128" column="66" lean-forward="true" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Seeker#0;class#Seeker#0" />
-                <element signature="method#getGCD#0;class#Seekers#0" />
-                <element signature="method#getRaisingMultiple#0;class#Seeker#0" />
-                <element signature="method#getFallingMultiple#0;class#Seeker#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeekersTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getGCD1#0;class#SeekersTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -232,6 +200,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,25 +253,6 @@
               <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
               <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
-              <item name="operators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
-              <item name="operators" type="462c0819:PsiDirectoryNode" />
-              <item name="comparison" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -318,14 +269,21 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fraction" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeekersTest.getFloorDivisor1">
+  <component name="RunManager" selected="JUnit.SeekersTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -384,53 +342,7 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="BasicOperationTest.processAddition1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FRACTION" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.fraction.operators.basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.fraction.operators.basics" />
-      <option name="MAIN_CLASS_NAME" value="pl.fraction.operators.basics.BasicOperationTest" />
-      <option name="METHOD_NAME" value="processAddition1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BasicOperationTest.processSubtraction1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FRACTION" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.fraction.operators.basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.fraction.operators.basics" />
-      <option name="MAIN_CLASS_NAME" value="pl.fraction.operators.basics.BasicOperationTest" />
-      <option name="METHOD_NAME" value="processSubtraction1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ModuloTest.get1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeekersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FRACTION" />
       <extension name="coverage">
         <pattern>
@@ -441,9 +353,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pl.fraction.functions.basic" />
-      <option name="MAIN_CLASS_NAME" value="pl.fraction.functions.basic.ModuloTest" />
-      <option name="METHOD_NAME" value="get1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="pl.fraction.functions.basic.SeekersTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -489,6 +401,52 @@
       <option name="PACKAGE_NAME" value="pl.fraction.functions.basic" />
       <option name="MAIN_CLASS_NAME" value="pl.fraction.functions.basic.SeekersTest" />
       <option name="METHOD_NAME" value="getGCD1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SeekersTest.getLCM1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.fraction.functions.basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.fraction.functions.basic" />
+      <option name="MAIN_CLASS_NAME" value="pl.fraction.functions.basic.SeekersTest" />
+      <option name="METHOD_NAME" value="getLCM1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SeekersTest.getModulo1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FRACTION" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.fraction.functions.basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.fraction.functions.basic" />
+      <option name="MAIN_CLASS_NAME" value="pl.fraction.functions.basic.SeekersTest" />
+      <option name="METHOD_NAME" value="getModulo1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -565,19 +523,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ModuloTest.get1" />
-      <item itemvalue="JUnit.BasicOperationTest.processSubtraction1" />
       <item itemvalue="JUnit.SeekersTest.getGCD1" />
-      <item itemvalue="JUnit.BasicOperationTest.processAddition1" />
       <item itemvalue="JUnit.SeekersTest.getFloorDivisor1" />
+      <item itemvalue="JUnit.SeekersTest" />
+      <item itemvalue="JUnit.SeekersTest.getModulo1" />
+      <item itemvalue="JUnit.SeekersTest.getLCM1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeekersTest.getFloorDivisor1" />
+        <item itemvalue="JUnit.SeekersTest" />
+        <item itemvalue="JUnit.SeekersTest.getLCM1" />
         <item itemvalue="JUnit.SeekersTest.getGCD1" />
-        <item itemvalue="JUnit.ModuloTest.get1" />
-        <item itemvalue="JUnit.BasicOperationTest.processSubtraction1" />
-        <item itemvalue="JUnit.BasicOperationTest.processAddition1" />
+        <item itemvalue="JUnit.SeekersTest.getFloorDivisor1" />
+        <item itemvalue="JUnit.SeekersTest.getModulo1" />
       </list>
     </recent_temporary>
   </component>
@@ -605,47 +563,47 @@
       <workItem from="1524222088364" duration="2365000" />
       <workItem from="1524474379774" duration="15786000" />
       <workItem from="1524645872039" duration="20472000" />
+      <workItem from="1524735929574" duration="10791000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 42m 32s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 06m 24s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 43m 26s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 06m 36s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 43m 56s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 06m 49s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 46m 14s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 07m 04s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 49m 30s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 07m 12s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 50m 10s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 09m 05s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 57m 49s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest - 2018.04.26 at 14h 09m 24s.xml">
+      <configuration name="SeekersTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 18h 58m 47s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 13m 11s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 19h 00m 19s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest_getLCM1 - 2018.04.26 at 14h 17m 50s.xml">
+      <configuration name="SeekersTest.getLCM1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeekersTest_getFloorDivisor1 - 2018.04.25 at 19h 01m 09s.xml">
-      <configuration name="SeekersTest.getFloorDivisor1" configurationId="JUnit" />
+    <history-entry file="SeekersTest - 2018.04.26 at 14h 41m 39s.xml">
+      <configuration name="SeekersTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106499000" />
+    <option name="totallyTimeSpent" value="117290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1815" height="1057" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -658,10 +616,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991453" weight="0.32864866" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972974" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.12324324" visible="true" weight="0.25641027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.12324324" visible="true" weight="0.25925925" />
       <window_info anchor="right" id="Database" order="3" weight="0.32991454" />
       <window_info id="Structure" order="1" sideWeight="0.8767567" side_tool="true" weight="0.22792023" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -687,8 +645,6 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991453" visible="true" weight="0.32864866" />
       <window_info anchor="right" id="JetGradle" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Profiler" order="8" />
@@ -698,10 +654,11 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50085473" side_tool="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32972974" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Problems" order="12" />
-      <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32972974" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32991454" />
@@ -709,11 +666,12 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.12324324" visible="true" weight="0.25641027" />
       <window_info anchor="right" id="Database" order="6" weight="0.32991454" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Structure" order="1" sideWeight="0.8767567" side_tool="true" weight="0.22792023" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -729,7 +687,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="69" />
+      <option name="time" value="94" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -738,6 +696,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>264+23</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>getRaisingMultiple(&quot;65&quot;,&quot;2&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -780,11 +743,6 @@
       </expression>
       <expression>
         <expression-string>getRaisingMultiple(&quot;7344691200&quot;,&quot;23&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getRaisingMultiple(&quot;960&quot;,&quot;480&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -926,13 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,9 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,37 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processAddition1#0;class#BasicOperationTest#0" />
-            <element signature="method#processAddition2#0;class#BasicOperationTest#0" />
-            <element signature="method#processSubtraction1#0;class#BasicOperationTest#0" />
-            <element signature="method#processMultiplication1#0;class#BasicOperationTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/ModuloTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#get1#0;class#ModuloTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Modulo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#get#0;class#Modulo#0" />
-            <element signature="method#getCumulatedNumber#0;class#Modulo#0" />
-            <element signature="method#getCumulatedNumberMultiplier#0;class#Modulo#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,13 +990,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/operators/comparison/Comparer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="51" column="76" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#FractionBasics#0;class#FractionBasics#0" />
-            <element signature="method#addIntegers#0;class#FractionBasics#0" />
-            <element signature="method#subtractIntegers#0;class#FractionBasics#0" />
-            <element signature="method#multiplyIntegers#0;class#FractionBasics#0" />
-            <element signature="method#divideIntegers#0;class#FractionBasics#0" />
+            <element signature="method#Comparer#0;class#Comparer#0" />
+            <element signature="method#areEqual#0;class#Comparer#0" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="method#isGreaterThan#0;class#Comparer#0" />
+            <element signature="method#isLowerThan#0;class#Comparer#0" />
           </folding>
         </state>
       </provider>
@@ -1091,43 +1016,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/operators/comparison/Comparer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Modulo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="384">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Comparer#0;class#Comparer#0" />
-            <element signature="method#areEqual#0;class#Comparer#0" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="method#isGreaterThan#0;class#Comparer#0" />
-            <element signature="method#isLowerThan#0;class#Comparer#0" />
+            <element signature="method#getCumulatedNumber#0;class#Modulo#0" />
+            <element signature="method#getCumulatedNumberMultiplier#0;class#Modulo#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/ModuloTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="160">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getGCD1#0;class#SeekersTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/functions/basic/Seeker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="128" column="66" lean-forward="true" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
+        <state relative-caret-position="80">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="method#Seeker#0;class#Seeker#0" />
+            <element signature="method#getFloorDivisor#0;class#Seeker#0" />
+            <element signature="method#getStepperRaisingMultiple#0;class#Seeker#0" />
+            <element signature="method#getStepperFallingMultiple#0;class#Seeker#0" />
+            <element signature="method#getUltimateMultiple#0;class#Seeker#0" />
+            <element signature="method#getUpswingOfRaisingMultiple#0;class#Seeker#0" />
+            <element signature="method#getUpswingOfFallingMultiple#0;class#Seeker#0" />
+            <element signature="method#getModulo#0;class#Seeker#0" />
+            <element signature="method#getGCD#0;class#Seeker#0" />
+            <element signature="e#6709#6710#0" expanded="true" />
+            <element signature="e#6784#6785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Seeker#0;class#Seeker#0" />
-            <element signature="method#getGCD#0;class#Seekers#0" />
-            <element signature="method#getRaisingMultiple#0;class#Seeker#0" />
-            <element signature="method#getFallingMultiple#0;class#Seeker#0" />
+            <element signature="method#getFloorDivisor1#0;class#SeekersTest#0" />
+            <element signature="method#getModulo1#0;class#SeekersTest#0" />
+            <element signature="method#getGCD1#0;class#SeekersTest#0" />
+            <element signature="method#getLCM1#0;class#SeekersTest#0" />
+            <element signature="method#getLCM2_Slow#0;class#SeekersTest#0" />
           </folding>
         </state>
       </provider>
