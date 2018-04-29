@@ -2,24 +2,10 @@ package pl.fraction.operators.basics;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pl.fraction.containers.Fraction;
+import pl.fraction.containers.fraction.Fraction;
 import pl.fraction.operators.comparison.Comparer;
 
 public class FractionBasicsTest {
-
-    @Test
-    public void addIntegers1() {
-        // given
-        FractionBasics operator = new FractionBasics();
-
-        // when
-        Fraction result1 = operator.addIntegers(new Fraction("1", "2"), new Fraction("1", "3"));
-        Fraction result2 = operator.addIntegers(new Fraction("123", "987"), new Fraction("739", "1010101"));
-
-        // then
-        Assert.assertTrue(Comparer.areEqual(result1, new Fraction("5", "6")));
-        Assert.assertTrue(Comparer.areEqual(result2, new Fraction("124971816", "996969687")));
-    }
 
     @Test
     public void subtractIntegers1() {

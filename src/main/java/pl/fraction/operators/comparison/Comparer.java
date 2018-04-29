@@ -1,8 +1,8 @@
 package pl.fraction.operators.comparison;
 
-import pl.fraction.containers.Fraction;
 import org.jetbrains.annotations.NotNull;
 import pl.fraction.containers.Operands;
+import pl.fraction.containers.fraction.Fractionable;
 import pl.fraction.utils.Strings;
 
 public class Comparer {
@@ -11,7 +11,7 @@ public class Comparer {
         // This should be a utility class.
     }
 
-    public static boolean areEqual(@NotNull Fraction fraction1, @NotNull Fraction fraction2) {
+    public static boolean areEqual(@NotNull Fractionable fraction1, @NotNull Fractionable fraction2) {
         if ((fraction1.getNumerator().length() != fraction2.getNumerator().length()) ||
             (fraction1.getDenominator().length() != fraction2.getDenominator().length())) {
             return false;
