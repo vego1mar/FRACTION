@@ -203,4 +203,16 @@ public final class Seeker {
         return getFloorDivisor(multiplicator.process(number1, number2), getGCD(number1, number2));
     }
 
+    @Contract(pure = true) public BasicOperation getMultiplicator() {
+        return multiplicator;
+    }
+
+    @Contract(pure = true) public BasicOperation getAdder() {
+        return adder;
+    }
+
+    @Contract(pure = true) public BasicOperation getSubtractor() {
+        return subtractor;
+    }
+
 }

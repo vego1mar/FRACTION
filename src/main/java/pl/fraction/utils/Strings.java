@@ -31,8 +31,7 @@ public class Strings {
         return true;
     }
 
-    @Contract(pure = true)
-    public static char[] getArray(int length, char initializer) {
+    @Contract(pure = true) public static char[] getArray(int length, char initializer) {
         char[] variable = new char[length];
 
         for (int i = 0; i < variable.length; i++) {
@@ -42,8 +41,7 @@ public class Strings {
         return variable;
     }
 
-    @NotNull
-    public static String getString(int length, char initializer) {
+    @NotNull public static String getString(int length, char initializer) {
         return new String(getArray(length, initializer));
     }
 
@@ -61,8 +59,7 @@ public class Strings {
         return -1;
     }
 
-    @NotNull
-    public static String getWithoutLeadingZeroes(@NotNull String string) {
+    @NotNull public static String getWithoutLeadingZeroes(@NotNull String string) {
         if (isZeroed(string)) {
             return "";
         }

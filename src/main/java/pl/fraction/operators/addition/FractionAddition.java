@@ -3,17 +3,14 @@ package pl.fraction.operators.addition;
 import org.jetbrains.annotations.NotNull;
 import pl.fraction.containers.fraction.Fraction;
 import pl.fraction.containers.fraction.Fractionable;
-import pl.fraction.operators.basics.BasicOperation;
-import pl.fraction.operators.basics.OperationType;
+import pl.fraction.functions.basic.Seeker;
 
 public class FractionAddition {
 
-    BasicOperation adder;
-    BasicOperation multiplicator;
+    private Seeker seeker;
 
     public FractionAddition() {
-        adder = new BasicOperation(OperationType.ADDITION);
-        multiplicator = new BasicOperation(OperationType.MULTIPLICATION);
+        seeker = new Seeker();
     }
 
     public Fractionable addIntegers(Fractionable fraction1, Fractionable fraction2) {
@@ -25,12 +22,12 @@ public class FractionAddition {
     }
 
     @NotNull private Fractionable addIntegersQuick(@NotNull Fractionable fraction1, @NotNull Fractionable fraction2) {
-        String numerator1 = multiplicator.process(fraction1.getNumerator(), fraction2.getDenominator());
-        String numerator2 = multiplicator.process(fraction2.getNumerator(), fraction1.getDenominator());
+        String numerator1 = seeker.getMultiplicator().process(fraction1.getNumerator(), fraction2.getDenominator());
+        String numerator2 = seeker.getMultiplicator().process(fraction2.getNumerator(), fraction1.getDenominator());
 
         return new Fraction(
-            adder.process(numerator1, numerator2),
-            multiplicator.process(fraction1.getDenominator(), fraction2.getDenominator())
+            seeker.getAdder().process(numerator1, numerator2),
+            seeker.getMultiplicator().process(fraction1.getDenominator(), fraction2.getDenominator())
         );
     }
 
