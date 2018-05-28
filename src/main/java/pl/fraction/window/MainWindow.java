@@ -19,9 +19,12 @@ public class MainWindow extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainWindow/MainWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainWindow/MainWindow.fxml"));
+        Parent root = loader.load();
+        MainWindowController controller = loader.getController();
         primaryStage.setTitle("Project Fraction");
         primaryStage.setScene(new Scene(root));
+        primaryStage.setOnShown(event -> controller.setUiControlsDefaultSettings());
         primaryStage.show();
     }
 }

@@ -14,4 +14,6 @@ public interface Fractionable {
 
     void shorten();
 
+    String toString();
+
 }

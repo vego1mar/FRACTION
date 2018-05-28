@@ -69,4 +69,7 @@ public final class Fraction implements Fractionable {
         isShortened = true;
     }
 
+    @NotNull @Override public String toString() {
+        return '[' + getNumerator() + '/' + getDenominator() + ']';
+    }
 }
