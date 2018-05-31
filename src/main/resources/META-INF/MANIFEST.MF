@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: pl.fraction.window.MainWindow
+
+Name: pl/fraction
+Specification-Title: "PROJECT FRACTION"
+Specification-Version: 1.0

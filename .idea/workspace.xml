@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JAR" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/utils/ReflectionHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/window/view/TreeLeafInteraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fractionable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fractionable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FRACTION.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FRACTION.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainWindow/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainWindow/MainWindow.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,7 +82,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,8 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/pl/fraction/containers/OperandsTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/sonar-project.properties" />
         <option value="$PROJECT_DIR$/src/test/java/pl/fraction/operators/basics/SubtractionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/Addition.java" />
@@ -147,14 +146,16 @@
         <option value="$PROJECT_DIR$/src/test/java/pl/fraction/operators/division/FractionDivisionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/utils/ReflectionHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/containers/settings/FractionWidth.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/fraction/window/view/TreeLeafInteraction.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/OperationType.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/window/workers/SelectedOperation.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fractionable.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fraction.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/window/workers/CountButtonWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/fraction/window/view/TreeLeafInteraction.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
       </list>
     </option>
   </component>
@@ -191,7 +192,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1815" />
+    <option name="width" value="1818" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -203,22 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FRACTION" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FRACTION" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="FRACTION" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FRACTION" type="616d4139:PackageViewModuleNode" />
-              <item name="fxml.MainWindow" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,59 +232,42 @@
               <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
               <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FRACTION" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FRACTION" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fraction" type="462c0819:PsiDirectoryNode" />
-              <item name="window" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FRACTION" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FRACTION" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="FRACTION" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FRACTION" type="616d4139:PackageViewModuleNode" />
+              <item name="fxml.MainWindow" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -307,12 +275,15 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/opensource/fraction/operators" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -322,6 +293,9 @@
       <recent name="pl.fraction.containers.fraction" />
       <recent name="pl.fraction.functions.basic" />
       <recent name="opensource.fraction.operators" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Y:\Projekty\FRACTION\META-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -563,6 +537,14 @@
       <workItem from="1527492101862" duration="20645000" />
       <workItem from="1527513018605" duration="1293000" />
       <workItem from="1527517978492" duration="5121000" />
+      <workItem from="1527676179365" duration="4789000" />
+      <workItem from="1527684859422" duration="236000" />
+      <workItem from="1527686731918" duration="619000" />
+      <workItem from="1527692459888" duration="66000" />
+      <workItem from="1527693068549" duration="54000" />
+      <workItem from="1527693127628" duration="56000" />
+      <workItem from="1527693990817" duration="206000" />
+      <workItem from="1527694298825" duration="170000" />
     </task>
     <servers />
   </component>
@@ -599,26 +581,25 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158753000" />
+    <option name="totallyTimeSpent" value="164949000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1815" height="1057" extended-state="0" />
+    <frame x="-7" y="0" width="1818" height="1057" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32972974" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50085473" side_tool="true" weight="0.32864866" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32991454" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32935154" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991453" weight="0.32864866" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972974" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.12324324" visible="true" weight="0.25584045" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.12324324" visible="true" weight="0.27872583" />
       <window_info anchor="right" id="Database" order="3" weight="0.32991454" />
       <window_info id="Structure" order="1" sideWeight="0.8767567" side_tool="true" weight="0.22792023" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -627,6 +608,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32972974" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
@@ -686,11 +668,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="116" />
+      <option name="time" value="117" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="operationType.getSelectionModel().getSelectedIndex()" language="JAVA" />
+        <watch expression="textProperty().getValue()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -700,6 +682,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>textProperty().getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>operationType.getSelectionModel().getSelectedIndex()</expression-string>
         <language-id>JAVA</language-id>
@@ -748,23 +735,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
-          <folding>
-            <element signature="method#setUiControlsDefaultSettings#0;class#MainWindowController#0" />
-            <element signature="method#setApplicationLayout#0;class#MainWindowController#0" />
-            <element signature="method#provideUiControlsSettings#0;class#MainWindowController#0" />
-            <element signature="method#populateTrees#0;class#MainWindowController#0" />
-            <element signature="method#onCountButtonClick#0;class#MainWindowController#0" />
-            <element signature="method#onCountButtonTask#0;class#MainWindowController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/Subtraction.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/Addition.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/Processable.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/operators/basics/AdditionTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/operators/basics/SubtractionTest.java" />
@@ -935,18 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Seeker#0;class#Seeker#0" />
-            <element signature="method#getFloorDivisor#0;class#Seeker#0" />
-            <element signature="method#getStepperRaisingMultiple#0;class#Seeker#0" />
-            <element signature="method#getStepperFallingMultiple#0;class#Seeker#0" />
-            <element signature="method#getUltimateMultiple#0;class#Seeker#0" />
-            <element signature="method#getUpswingOfRaisingMultiple#0;class#Seeker#0" />
-            <element signature="method#getUpswingOfFallingMultiple#0;class#Seeker#0" />
-            <element signature="method#getModulo#0;class#Seeker#0" />
-            <element signature="method#getGCD#0;class#Seeker#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -972,20 +930,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/containers/settings/FractionWidth.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/view/TreeLeafInteraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#startEdit#0;class#TreeLeafInteraction#0" />
-            <element signature="method#cancelEdit#0;class#TreeLeafInteraction#0" />
-            <element signature="method#updateItem#0;class#TreeLeafInteraction#0" />
-            <element signature="method#createTextField#0;class#TreeLeafInteraction#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/operators/basics/OperationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -993,13 +937,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/workers/SelectedOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/workers/SelectedOperation.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/containers/fraction/Fractionable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1011,82 +949,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Fraction#0;class#Fraction#0" />
-            <element signature="method#setNumerator#0;class#Fraction#0" />
-            <element signature="method#setDenominator#0;class#Fraction#0" />
-            <element signature="method#shorten#0;class#Fraction#0" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/workers/CountButtonWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="84" lean-forward="true" selection-start-line="35" selection-start-column="84" selection-end-line="35" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CountButtonWorker#0;class#CountButtonWorker#0" />
-            <element signature="method#setOperationType#0;class#CountButtonWorker#0" />
-            <element signature="e#2572#2573#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/workers/CountButtonWorker.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/fraction/functions/basic/SeekersTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="method#getFloorDivisor1#0;class#SeekersTest#0" />
-            <element signature="method#getModulo1#0;class#SeekersTest#0" />
-            <element signature="method#getGCD1#0;class#SeekersTest#0" />
-            <element signature="method#getLCM1#0;class#SeekersTest#0" />
-            <element signature="method#getLCM2_Slow#0;class#SeekersTest#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/view/TreeLeafInteraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/log4j-application.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="method#setUiControlsDefaultSettings#0;class#MainWindowController#0" />
-            <element signature="method#setApplicationLayout#0;class#MainWindowController#0" />
-            <element signature="method#provideUiControlsSettings#0;class#MainWindowController#0" />
-            <element signature="method#populateTrees#0;class#MainWindowController#0" />
-            <element signature="method#onCountButtonClick#0;class#MainWindowController#0" />
-            <element signature="method#onCountButtonTask#0;class#MainWindowController#0" />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/fraction/window/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF" />
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>JavaFXApp</last-edited>
+          <artifact-editor>
+            <show-content>
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
+              <type id="javaee-facet-resources" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>FRACTION</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1106,6 +1030,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>JAR</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1134,7 +1059,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

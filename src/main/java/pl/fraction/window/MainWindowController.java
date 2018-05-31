@@ -118,12 +118,16 @@ public class MainWindowController {
                 switch (operationType.getSelectionModel().getSelectedIndex()) {
                     default:
                     case 0:
+                        log.info(ReflectionHelper.getCurrentMethodName() + "(+)");
                         return new FractionAddition().addIntegers(leftOperand, rightOperand);
-                     case 1:
+                    case 1:
+                        log.info(ReflectionHelper.getCurrentMethodName() + "(-)");
                         return new FractionSubtraction().subtractIntegers(leftOperand, rightOperand);
                     case 2:
+                        log.info(ReflectionHelper.getCurrentMethodName() + "(*)");
                         return new FractionMultiplication().multiplyIntegers(leftOperand, rightOperand);
                     case 3:
+                        log.info(ReflectionHelper.getCurrentMethodName() + "(/)");
                         return new FractionDivision().divideIntegers(leftOperand, rightOperand);
                 }
             }
